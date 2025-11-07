@@ -38,11 +38,38 @@ section {
   margin: auto;
 }
 
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem; /* space between image and text */
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
 #about img {
-  width: 150px;
+  width: 180px;
   border-radius: 50%;
-  display: block;
-  margin: 1em auto;
+  flex-shrink: 0;
+  border: 4px solid #09786d;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#about img:hover {
+  transform: scale(1.05);
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;
+  max-width: 550px;
 }
 
 footer {
